@@ -1,6 +1,6 @@
 var colours = new Array("#93f", "#3f9", "#f39", "#39f", "#9f3"); // what colour are the blobs
-var speed = 50; // speed of animation, lower is faster
-var blobs = 10; // how many blobs are in the jar
+var speed = 30; // speed of animation, lower is faster
+var blobs = 3; // how many blobs are in the jar
 var size = 80; // maximum blob size
 
 /***************************\
