@@ -1,3 +1,10 @@
+<!-- 
+IN CASE YOU ARE WONDERING:
+
+This should probably be obvious, but yes, this website is intended as humor. It is a parody of old-school conference website, with its over-the-top testimonials, an incredibly bad and cheesy photo of me, silly gifs and exaggerated claims. The purpose of this website is to entertain and amuse, nothing else.
+
+Please rest assured that the PETS 2024 speed mentoring session will be conducted with serious attention and care towards the privacy and security community. We are committed to providing a valuable and enriching experience for all participants, and we look forward to seeing you at the event!
+-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -40,7 +47,7 @@
 			position: absolute;
 			z-index: -1;
 		}
-		
+
 		h1 {
 			position: relative;
 			z-index: 1;
@@ -58,7 +65,7 @@
 			font-weight: bold;
 		}
 
-		.wiggle:hover{
+		.wiggle:hover {
 			animation: rotation 0.4s infinite linear;
 		}
 
@@ -110,11 +117,13 @@
 
 		div.bubble {
 			background-color: #fff;
-			border-radius: 10px;
 			box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
 			padding: 10px 60px;
 			margin: 10px;
 			opacity: 0.97;
+			border: 5px solid transparent;
+			border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+			border-image-slice: 1;
 		}
 
 		h1 {
@@ -142,7 +151,8 @@
 			}
 		}
 
-		.rainbow {
+		.rainbow,
+		h3 {
 			background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -185,8 +195,20 @@
 				margin: 5px;
 				padding: 20px;
 			}
+
+			li {
+				margin: 0px;
+			}
 		}
 	</style>
+	<script src="js/clicksplosion.js"></script>
+	<script src="js/blobs.js"></script>
+	<script src="js/cursor.js"></script>
+	<script>
+		window.addEventListener("load", (event) => {
+			new cursoreffects.fairyDustCursor();
+		});
+	</script>
 </head>
 
 <body>
@@ -199,6 +221,7 @@
 			<p class="rainbow">BACK AFTER "OVERWHELMINGLY POSITIVE RESPONSE" AT PETS 2023!<br />Get ready to take your
 				networking skills to the next level with our ultra-rad speed
 				mentoring session!</p>
+			<img class="centeredImage" src="img/kitty.gif" alt="" />
 			<h2>Wednesday, July 17, 2:00pm!<br />(See the <a href="https://petsymposium.org/2024/program.php">PETS 2024
 					Program</a>)</h2>
 			<p>
@@ -217,11 +240,13 @@
 				and join the most tubular
 				mentoring event
 				of the year! 🌟</p>
+			<img class="centeredImage" src="img/ScientistStudyingGlobe.gif" alt="" />
 			<h2>The "BLURB"</h2>
 			<p>
 				🌟 Unlock Your Potential at the PETS 2024 Speed Mentoring Session! 🚀
 			</p>
 			<img class="centeredImage" src="img/aniscientist.gif" alt="" />
+			<img style="float:left" src="img/privacy.gif" alt="" />
 			<p>
 				<span class="rainbow">Are you ready to supercharge your career in privacy-enhancing technologies?</span>
 				Look no further than the
@@ -231,7 +256,9 @@
 				looking to transition into the privacy tech industry? Find your next collaborator! You're a seasoned
 				expert in the field? Share your wisdom and inspire the next generation of privacy enthusiasts!
 			</p>
+			<h3>"THE RECIPE FOR SUCCESS"</h3>
 			<img class="centeredImage" src="img/handshake.gif" alt="" />
+			<img style="float:right" src="img/conferenceroom_meeting_lg_clr.gif" alt="" />
 			<p>
 				Don't miss out on this extraordinary opportunity to connect with like-minded individuals, explore
 				groundbreaking ideas, and unlock doors to exciting collaborations and career prospects. Join us at the
@@ -241,7 +268,8 @@
 			<img class="centeredImage" src="img/success.gif" alt="" />
 			<ul>
 				<h3>🎓 From Academia !!!</h3>
-				<li><img class="biopic" src="img/p1.png" alt="" /><em>"Before the PETS Speed Mentoring session, I was just another clueless grad student, lost in a
+				<li><img class="biopic" src="img/p1.png" alt="" /><em>"Before the PETS Speed Mentoring session, I was
+						just another clueless grad student, lost in a
 						labyrinth of privacy papers. But then, I met my mentor, the legendary Dr. Enigma, who possessed
 						the knowledge of a thousand encrypted databases! With a single conversation, they downloaded
 						their wisdom directly into my brain (a completely painless procedure!), transforming me into a
@@ -250,46 +278,32 @@
 						just change my life; it rewrote the very code of my existence!"</em> &mdash; <strong>Dr. Elliot
 						"The Encryptor" Thompson, Assistant Professor of Privacy-Enhancing Cryptography at the
 						University of Cypherpunk.</strong></li>
-				<li><img class="biopic" src="img/p2.png" alt="" /<em>"I was on the verge of abandoning my PhD and running away to join the circus, but then the PETS
-						Speed Mentoring session happened! I met a mentor who was so brilliant, they could solve
-						NP-complete problems in their sleep. They took me under their wing and taught me the forbidden
-						arts of privacy sorcery. Now, I'm not just a tenured professor; I'm the supreme overlord of
-						privacy research, with an army of devoted graduate students who worship the ground I walk on.
-						The mentoring session didn't just save my academic career; it turned me into a living
-						legend!"</em> &mdash; <strong>Dr. Cipher "The Unbreakable" Nakamoto, Emperor of Privacy Studies
+				<li><img class="biopic" src="img/p2.png" alt="" /<em>"I was on the verge of abandoning my PhD and
+					running away to join the circus, but then the PETS
+					Speed Mentoring session happened! I met a mentor who was so brilliant, they could solve
+					NP-complete problems in their sleep. They took me under their wing and taught me the forbidden
+					arts of privacy sorcery. Now, I'm not just a tenured professor; I'm the supreme overlord of
+					privacy research, with an army of devoted graduate students who worship the ground I walk on.
+					The mentoring session didn't just save my academic career; it turned me into a living
+					legend!"</em> &mdash; <strong>Dr. Cipher "The Unbreakable" Nakamoto, Emperor of Privacy Studies
 						and Keeper of the Sacred Hash at the University of Crypton Prime.</strong></li>
-				<li><img class="biopic" src="img/p3.png" alt="" /<em>"As a lowly postdoc, I was contemplating a career in underwater basket weaving, but then I
-						stumbled into the PETS Speed Mentoring session. There, I met a mentor who was so ahead of their
-						time, they were already living in the year 3000. With a mere glance, they could see through the
-						very fabric of privacy itself. Under their tutelage, I ascended to a higher plane of research,
-						where privacy protocols danced to the beat of my keyboard. Now, I'm not just leading a research
-						lab; I'm the mastermind behind a top-secret project that will revolutionize privacy as we know
-						it. The mentoring session didn't just launch my success; it catapulted me into the stratosphere
-						of academic stardom!"</em> &mdash; <strong>Dr. Stealth "The Invisible" Garcia, Director of the
-						Shadow Institute for Advanced Privacy Alchemy and Wielder of the Unhackable Blockchain at the
-						University of Cipherspace.</strong></li>
 				<h3>👔 From Industry !!!</h3>
-				<li><img class="biopic" src="img/p4.png" alt="" /<em>"Thanks to the PETS Speed Mentoring session, I went from a lowly intern to CEO of my own tech
-						empire overnight! The connections I made were so powerful, I literally had to wear shades
-						indoors. Now I'm rollin' in dough and living the dream! "</em> &mdash; <strong>Bud "The Rad"
+				<li><img class="biopic" src="img/p4.png" alt="" /<em>"Thanks to the PETS Speed Mentoring session, I went
+					from a lowly intern to CEO of my own tech
+					empire overnight! The connections I made were so powerful, I literally had to wear shades
+					indoors. Now I'm rollin' in dough and living the dream! "</em> &mdash; <strong>Bud "The Rad"
 						Johnson, CEO of TotallyLegitTech Inc.</strong></li>
-				<li><img class="biopic" src="img/p5.png" alt="" /<em>"I was stuck in a dead-end job, watching my Tamagotchi all day. But then I attended the PETS
-						Speed Mentoring session, and BAM! Suddenly, I'm the talk of Silicon Valley, with job offers
-						pouring in faster than I could say 'Cowabunga!' I even got a free pager just for showing
-						up!"</em> &mdash; <strong>Kimber "The Crypto Queen" Lee, Head of Radical Innovations at
-						BlockchainBuster LLC.</strong></li>
-				<li><img class="biopic" src="img/p6.png" alt="" /<em>"I was lost in the labyrinth of corporate anonymity, a nameless cog in the relentless machinery
-						of data exploitation. But then, like a whisper from the void, the PETS Speed Mentoring session
-						called to me. I met a mentor who seemed to exist in the shadows, their face obscured by a
-						flickering monitor's glow. Now, I am a ghost in the machine, a phantom in the networks of power.
-						The mentoring session didn't just change my career; it shattered my perception of reality,
-						leaving me haunted by the weight of the knowledge I now possess. In the depths of the server
-						rooms, I toil endlessly, my identity erased, my past a fading memory. The Mentor's voice echoes
-						in the static of my mind, a constant reminder of the sacrifices we make in the name of privacy.
-						But sometimes, in the eerie glow of the screens, I catch a glimpse of something else, a flicker
-						of doubt, a nagging question: at what cost does this power come? And in the end, will there be
-						anything left of the person I once was, or will I be consumed by the very secrets I swore to
-						protect?"</em> &mdash; <strong>Null "The Void" Cipher, Shadow Data Alchemist and Whisperer of
+				<li><img class="biopic" src="img/p6.png" alt="" /<em>"I was lost in the labyrinth of corporate
+					anonymity, a nameless cog in the relentless machinery
+					of data exploitation. But then, like a whisper from the void, the PETS Speed Mentoring session
+					called to me. I met a mentor who seemed to exist in the shadows, their face obscured by a
+					flickering monitor's glow. Now, I am a ghost in the machine, a phantom in the networks of power.
+					The mentoring session didn't just change my career; it shattered my perception of reality,
+					leaving me haunted by the weight of the knowledge I now possess. In the depths of the server
+					rooms, I toil endlessly, my identity erased, my past a fading memory. The Mentor's voice echoes
+					in the static of my mind. At what cost does this power come? And in the end, will there be
+					anything left of the person I once was, or will I be consumed by the very secrets I swore to
+					protect?"</em> &mdash; <strong>Null "The Void" Cipher, Shadow Data Alchemist and Whisperer of
 						Forgotten Protocols at [DATA EXPUNGED].</strong></li>
 			</ul>
 			<h2>WHAT ARE YOU WAITING FOR?!?!</h2>
@@ -297,14 +311,14 @@
 				and join the most tubular
 				mentoring event
 				of the year! 🌟</p>
-			<marquee>🌈 PETS 2024 Speed Mentoring - Where the Magic Happens! 🦄</marquee>
+			<marquee>🌈 PETS 2024 Speed Mentoring - Where Connections Happen! 🦄</marquee>
 			<img class="centeredImage" src="img/thanking.gif" alt="" />
 			<hr />
-			<p class="contact">Organized by <a href="https://nadim.computer">Nadim Kobeissi</a> &bull; <a href="mailto:n@nadim.email">Email</a></p>
+			<p class="contact">Organized by <a href="https://nadim.computer">Nadim Kobeissi</a> &bull; <a
+					href="mailto:n@nadim.email">Email</a> <img style="float:right" src="img/IEGET_ANIMATED.gif"
+					alt="Powered by Internet Explorer" /></p>
 		</div>
 	</div>
-	<script src="js/clicksplosion.js"></script>
-	<script src="js/blobs.js"></script>
 </body>
 
 </html>
