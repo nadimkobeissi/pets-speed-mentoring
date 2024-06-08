@@ -51,11 +51,6 @@ Please rest assured that the PETS 2024 speed mentoring session will be conducted
 			z-index: -1;
 		}
 
-		audio {
-			display: block;
-			margin: 0 auto;
-		}
-
 		.wiggle {
 			display: inline-block;
 			animation: wiggling 1s infinite;
@@ -181,6 +176,63 @@ Please rest assured that the PETS 2024 speed mentoring session will be conducted
 			animation: wowing 0.5s infinite linear;
 		}
 
+		.win95-audio {
+			border: 2px solid #000;
+			border-right: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+			border-left: 2px solid #000;
+			border-top: 2px solid #000;
+			background-color: #C0C0C0;
+			padding: 5px;
+			font-family: 'MS Sans Serif', Tahoma, sans-serif;
+			width: 300px;
+			display: block;
+			margin: 0 auto;
+			box-shadow: inset 1px 1px 0 #FFF, inset -1px -1px 0 #000;
+		}
+
+		.win95-audio button {
+			background: linear-gradient(to bottom, #FFF 0%, #C0C0C0 100%);
+			border: 2px solid #000;
+			border-right: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+			border-left: 2px solid #000;
+			border-top: 2px solid #000;
+			box-shadow: inset 1px 1px 0 #FFF, inset -1px -1px 0 #000;
+			font-family: 'MS Sans Serif', Tahoma, sans-serif;
+			font-size: 12px;
+			margin: 2px;
+			padding: 2px 6px;
+			cursor: pointer;
+		}
+
+		.win95-audio button:active {
+			border-right: 2px solid #000;
+			border-bottom: 2px solid #000;
+			border-left: 2px solid #FFF;
+			border-top: 2px solid #FFF;
+		}
+
+		.win95-audio audio::-webkit-media-controls-panel {
+			background: #C0C0C0;
+			border: 2px solid #000;
+			border-right: 2px solid #FFF;
+			border-bottom: 2px solid #FFF;
+			border-left: 2px solid #000;
+			border-top: 2px solid #000;
+		}
+
+		.win95-audio audio::-webkit-media-controls-play-button,
+		.win95-audio audio::-webkit-media-controls-mute-button,
+		.win95-audio audio::-webkit-media-controls-current-time-display,
+		.win95-audio audio::-webkit-media-controls-time-remaining-display,
+		.win95-audio audio::-webkit-media-controls-timeline,
+		.win95-audio audio::-webkit-media-controls-volume-slider-container {
+			color: #000;
+			font-family: 'MS Sans Serif', Tahoma, sans-serif;
+			font-size: 12px;
+		}
+
 		@media all and (max-width: 700px) {
 			body {
 				font-size: 18px;
@@ -217,7 +269,12 @@ Please rest assured that the PETS 2024 speed mentoring session will be conducted
 			<img class="centeredImage" src="img/h-usakoso.gif" alt="" />
 			<img class="nadim" src="img/nadim.jpg" alt="" />
 			<h1>The PETS 2024<br />Speed Mentoring Experience<br />&bull;<br />"Where Connections Happen!"</h1>
-			<audio controls loop src="midi/c_shepherdofmysoul.mp3"></audio>
+			<div class="win95-audio">
+				<audio controls loop>
+					<source src="midi/c_shepherdofmysoul.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
 			<p class="rainbow">
 				<img src="img/blobshimmer.gif" alt="" />BACK AFTER "OVERWHELMINGLY POSITIVE RESPONSE" AT PETS 2023!<img src="img/blobshimmer.gif" alt="" />
 				<br />
